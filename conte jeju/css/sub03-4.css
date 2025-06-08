@@ -1,0 +1,2279 @@
+@charset "utf-8";
+
+body {
+    font-family: "Noto Sans";
+    font-size: 16px;
+    background-color: #f5f7f2;
+    color: #404040;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+img {
+   display: block;
+}
+a {
+   text-decoration: none;
+   color: inherit;
+}
+/*header*/
+header {
+    width: 100%;
+    height: 300px;
+    background-color: #d7d8d0;
+    position: relative;
+}
+.logo {
+    width: 120px;
+    height: 100px;
+    /*background-color: blueviolet;*/
+    font-size: 32px;
+    font-family: "Paytone One", serif;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #203218;
+}
+.mainmenu {
+    width: 70%;
+    height: 100px;
+    /*background-color: blanchedalmond;*/
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+    text-align: center;
+}
+.mainmenu li {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+   /*border: 1px solid;*/
+    padding: 10px;
+    margin: 20px 20px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #686a67;
+}
+/* 메인메뉴 호버시 */
+.mainmenu li:hover {
+    color:  #2c3128;
+}
+.login {
+    width: 190px;
+    height: 50px;
+    /*background-color: rgb(235, 21, 170);*/
+    position: absolute;
+    top: 2%;
+    right: 10%;
+}
+.login li {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    width: 60px;
+    height: 30px;
+    /*border: 1px solid;*/
+    padding: 3px;
+    text-align: center;
+    line-height: 30px;
+    margin: 4px 10px;
+    color: #686a67;
+}
+/*page title*/
+.p_title {
+    width: 100%;
+    height: 300px;
+    /*background-color: aqua;*/
+    position: relative;
+    list-style: none;
+}
+.p_title .title {
+    width: 100%;
+    height: 100%;
+}
+.p_title .title img{
+    width: 100%;
+    height: 100%;
+}
+.p_title .title>h1{
+    text-align: center;
+    position: absolute;
+    color: #f4f2ed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*page sub title*/
+.subtitle {
+    width: 100%;
+    height: 100px;
+    /*background-color: lightblue;*/
+    overflow: hidden;
+    margin-top: 100px;
+}
+.subtitle h2 {
+    text-align: center;
+    line-height: 100px;
+}
+/*WELLNESs PROGRAM*/
+.wp {
+    width: 100%;
+    height: 910px;
+    /*background-color: lightgoldenrodyellow;*/
+    overflow: hidden;
+    margin-top: 50px;
+}
+.wp>h1 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 360px;
+}
+.wellness {
+    width: 1170px;
+    height: 740px;
+    background-color: #F4F2ED;
+    border: 1px solid #786A6A;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.wellness .p_title {
+    width: 100%;
+    height: 40px;
+    background-color: #D3D7C6;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.p_title li {
+    flex: 1;
+    border: 1px solid #786A6A;
+    border-top: none;
+    text-align: center;
+    line-height: 40px;
+}
+.p_title li:hover {
+    font-weight: bold;
+}
+.p_title li:nth-child(1) {
+    border-left: none;
+    border-right: none;
+}
+.p_title li:nth-child(3) {
+    border-left: none;
+    border-right: none;
+}
+.p_title li:nth-child(4) {
+    border-right: none;
+    background-color: #edeeea;
+}
+.wellness .program_slide {
+    width: 3510px;
+}
+.wellness .program_slide ul li {
+    width: 1170px;
+    float: left;
+    list-style: none;
+}
+.wellness .program_slide li> .imgbox{
+    width: 45%;
+    height: 700px;
+    float: left;
+    /*background-color: aquamarine;*/
+}
+.wellness .program_slide li> .imgbox img{
+    width: 100%;
+    height: 100%;
+}
+.wellness .program_slide li> .textbox{
+    width: 55%;
+    height: 700px;
+    float: left;
+    /*background-color: lightgreen;*/
+}
+.wellness .program_slide li> .textbox>h3 {
+    text-align: center;
+    margin-top: 100px;
+    color: #706969;
+}
+.wellness .program_slide li> .textbox>p {
+    width: 450px;
+    color: #606469;
+    /*border: 1px solid;*/
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.wellness .program_slide li> .textbox>h4 {
+    text-align: center;
+    margin-top: 160px;
+    color: #706969;
+}
+.wellness .program_slide li>.textbox>.guide {
+    width: 190px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.wellness .program_slide li> .guide li {
+    color: #606469;
+}
+/*WELLNES PROGRAM TIME TABLE*/
+.w_time {
+    width: 100%;
+    height: 830px;
+    /*background-color: lightblue;*/
+    overflow: hidden;
+    margin-top: 100px;
+}
+.w_time .clock {
+    width: 30px;
+    height: 30px;
+    /*border: 1px solid;*/
+    float: left;
+    margin-left: 360px;
+}
+.w_time .clock img {
+    width: 100%;
+    height: 100%;
+}
+.w_time>h3 {
+    /*border: 1px solid;*/
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.w_time .w_schedule {
+    width: 1170px;
+    height: 620px;
+    /*border: 1px solid;*/
+    /*background-color: lightseagreen;*/
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.w_schedule .red {
+    font-size: 12px;
+    color: red;
+    display: block;
+}
+.w_schedule td {
+    border-bottom: 1px solid #aa9c82;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+}
+.w_schedule th {
+    border-top: 1px solid #aa9c82;
+    border-bottom: 2px solid #aa9c82;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+.w_schedule tr:nth-child(6) {
+    height: 80px;
+}
+.w_text {
+    width: 1170px;
+    height: 85px;
+    /*background-color: aqua;*/
+    margin: 0 auto;
+    margin-top: 20px;
+    list-style: none;
+}
+.w_text>li {
+    font-size: 14px;
+    color: #F02727;
+}
+/*WELLNES COACH*/
+.w_coach {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    /*border: 1px solid rebeccapurple;
+    background-color: lightblue;*/
+    overflow: hidden;
+    margin-top: 100px;
+}
+.w_coach .title {
+    width: 200px;
+    height: 30px;
+    /*background-color: lightgray;*/
+    margin-left: 370px;
+    margin-top: 10px;
+}
+.w_coach .title p {
+    margin-left: 10px;
+    font-weight: bold;
+}
+.w_coach hr {
+    width: 170px;
+    border: 1px solid #aa9c82;
+    margin-top: 2px;
+}
+/*WELLNES COACH PROFILE*/
+.w_coach .profile {
+    width: 1160px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgb(231, 231, 213);
+    overflow: hidden;
+    position: relative;
+}
+.w_coach .profile .profilebox {
+    width: 1140px;
+    height: 380px;
+    /*border: 2px solid red;*/
+    box-sizing: border-box;
+    margin: 10px auto;
+    overflow: hidden;
+    background-color: rgb(231, 231, 213);;
+}
+.w_coach .profile .profilebox .c_01 {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #aa9c82;
+    box-sizing: border-box;
+    float: left;
+}
+.w_coach .profile .profilebox .c_01 .p_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.w_coach .profile .profilebox .c_01 .p_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.w_coach .profile .profilebox .c_01>h4 {
+    text-align: center;
+    margin: 20px auto;
+}
+.w_coach .profile .profilebox .c_01>.career {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 12px;
+    width: 250x;
+    height: 160px;
+    padding: 5px 10px;
+    /*background-color: lightgray;*/
+}
+.w_coach .profile .profilebox .c_01>.career>li {
+    margin-top: 2px;
+}
+.w_coach .profile .profilebox .c_02 {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #aa9c82;
+    border-left: none;
+    box-sizing: border-box;
+    float: left;
+}
+.w_coach .profile .profilebox .c_02 .p_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.w_coach .profile .profilebox .c_02 .p_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.w_coach .profile .profilebox .c_02>h4 {
+    text-align: center;
+    margin: 20px auto;
+}
+.w_coach .profile .profilebox .c_02>.career {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 12px;
+    width: 250x;
+    height: 160px;
+    padding: 5px 10px;
+    /*background-color: lightgray;*/
+}
+.w_coach .profile .profilebox .c_02>.career>li {
+    margin-top: 2px;
+}
+.w_coach .profile .profilebox .c_03 {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #aa9c82;
+    border-left: none;
+    box-sizing: border-box;
+    float: left;
+}
+.w_coach .profile .profilebox .c_03 .p_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.w_coach .profile .profilebox .c_03 .p_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.w_coach .profile .profilebox .c_03>h4 {
+    text-align: center;
+    margin: 20px auto;
+}
+.w_coach .profile .profilebox .c_03>.career {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 12px;
+    width: 250x;
+    height: 160px;
+    padding: 5px 10px;
+    /*background-color: lightgray;*/
+}
+.w_coach .profile .profilebox .c_03>.career>li {
+    margin-top: 2px;
+}
+.w_coach .profile .profilebox .c_04 {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #aa9c82;
+    border-left: none;
+    box-sizing: border-box;
+    float: left;
+}
+.w_coach .profile .profilebox .c_04 .p_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.w_coach .profile .profilebox .c_04 .p_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.w_coach .profile .profilebox .c_04>h4 {
+    text-align: center;
+    margin: 20px auto;
+}
+.w_coach .profile .profilebox .c_04>.career {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 12px;
+    width: 250x;
+    height: 160px;
+    padding: 5px 10px;
+    /*background-color: lightgray;*/
+}
+.w_coach .profile .profilebox .c_04>.career>li {
+    margin-top: 2px;
+}
+/*SPECIAL PROGRAM*/
+.special {
+    width: 100%;
+    height: 850px;
+    /*background-color: lightskyblue;*/
+    overflow: hidden;
+    margin-top: 100px;
+}
+.special>h1 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 360px;
+}
+.s_program {
+    width: 1170px;
+    height: 700px;
+    background-color: #F4F2ED;
+    border: 1px solid #aa9c82;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.s_programslide {
+    width: 8190px;
+}
+.s_programslide ul li {
+    width: 1170px;
+    float: left;
+    list-style: none;
+}
+.s_programslide li>.imgbox {
+    width: 45%;
+    height: 700px;
+    float: left;
+    background-color: lightcoral;
+}
+.s_programslide li>.imgbox img {
+    width: 100%;
+    height: 100%;
+}
+.s_programslide li>.textbox {
+    width: 55%;
+    height: 700px;
+    background-color: #F4F2ED;
+    float: left;
+}
+.s_programslide li>.textbox .program_tit {
+    width: 530px;
+    height: 38px;
+    /*background-color: lightsalmon;*/
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.s_programslide li>.textbox .program_tit>h2 {
+    /*border: 1px solid;*/
+    float: left;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    color: #706969;
+}
+.s_programslide li>.textbox .program_tit>h2:nth-child(1) {
+    width: 290px;
+    margin-left: 40px;
+    text-align: center;
+}
+.s_programslide li>.textbox .program_tit>h2:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+.s_programslide li>.textbox>p {
+    width: 480px;
+    margin: 80px auto;
+    text-align: center;
+    color: #606469;
+}
+.s_programslide li>.textbox>h4 {
+    text-align: center;
+    margin-top: 170px;
+    color: #706969;
+}
+.s_programslide li>.textbox .guide {
+    width: 95px;
+    /*background-color: lightseagreen;*/
+    margin: 30px auto;
+    font-size: 14px;
+    color: #606469;
+}
+/*SPECIAL PROGRAM TABLE*/
+.s_time {
+    width: 100%;
+    height: 830px;
+    /*background-color: lightgray;*/
+    overflow: hidden;
+    margin-top: 100px;
+}
+.s_time .icon {
+    width: 30px;
+    height: 30px;
+    /*border: 1px solid;*/
+    float: left;
+    margin-left: 360px;
+}
+.s_time .icon  img {
+    width: 100%;
+    height: 100%;
+}
+.s_time>h3 {
+    float: left;
+    /*border: 1px solid;*/
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.s_schedule {
+    width: 1170px;
+    height: 620px;
+    /*border: 1px solid;*/
+    /*background-color: lightseagreen;*/
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.s_schedule td {
+    border-bottom: 1px solid #aa9c82;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+}
+.s_schedule th {
+    border-top: 1px solid #aa9c82;
+    border-bottom: 2px solid #aa9c82;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+.s_text {
+    width: 1170px;
+    height: 85px;
+    /*background-color: aqua;*/
+    margin: 0 auto;
+    margin-top: 20px;
+    list-style: none;
+}
+.s_text li{
+    font-size: 14px;
+    color: #F02727;
+}
+/*SPECIAL PROGRAM COACH*/
+.s_coach {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    /*border: 1px solid rebeccapurple;
+    background-color: lightblue;*/
+    overflow: hidden;
+    margin-top: 100px;
+}
+.s_coach .title {
+    width: 200px;
+    height: 30px;
+    /*background-color: lightgray;*/
+    margin-left: 370px;
+    margin-top: 10px;
+}
+.s_coach .title p {
+    margin-left: 10px;
+    font-weight: bold;
+}
+.s_coach hr {
+    width: 195px;
+    border: 1px solid #786A6A;
+    margin-top: 2px;
+}
+/*SPECIAL PROGRAM COACH profile*/
+.s_coach .profile {
+    width: 1160px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgb(231, 231, 213);
+    overflow: hidden;
+    position: relative;
+}
+.s_coach .profile .profilebox {
+    width: 1140px;
+    height: 380px;
+    /*border: 2px solid red;*/
+    box-sizing: border-box;
+    margin: 10px auto;
+    overflow: hidden;
+    background-color: rgb(231, 231, 213);
+}
+.s_coach .profile .profilebox .c_01 {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #aa9c82;
+    box-sizing: border-box;
+    float: left;
+}
+.s_coach .profile .profilebox .c_01 .p_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.s_coach .profile .profilebox .c_01 .p_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.s_coach .profile .profilebox .c_01>h4 {
+    text-align: center;
+    margin: 20px auto;
+}
+.s_coach .profile .profilebox .c_01>.career {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 12px;
+    width: 250x;
+    height: 160px;
+    padding: 5px 10px;
+    /*background-color: lightgray;*/
+}
+.s_coach .profile .profilebox .c_01>.career>li {
+    margin-top: 2px;
+}
+.s_coach .profile .profilebox .c_02 {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #aa9c82;
+    border-left: none;
+    box-sizing: border-box;
+    float: left;
+}
+.s_coach .profile .profilebox .c_02 .p_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.s_coach .profile .profilebox .c_02 .p_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.s_coach .profile .profilebox .c_02>h4 {
+    text-align: center;
+    margin: 20px auto;
+}
+.s_coach .profile .profilebox .c_02>.career {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 12px;
+    width: 250x;
+    height: 160px;
+    padding: 5px 10px;
+    /*background-color: lightgray;*/
+}
+.s_coach .profile .profilebox .c_02>.career>li {
+    margin-top: 2px;
+}
+.s_coach .profile .profilebox .c_03 {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #aa9c82;
+    border-left: none;
+    box-sizing: border-box;
+    float: left;
+}
+.s_coach .profile .profilebox .c_03 .p_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.s_coach .profile .profilebox .c_03 .p_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.s_coach .profile .profilebox .c_03>h4 {
+    text-align: center;
+    margin: 20px auto;
+}
+.s_coach .profile .profilebox .c_03>.career {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 12px;
+    width: 250x;
+    height: 160px;
+    padding: 5px 10px;
+    /*background-color: lightgray;*/
+}
+.s_coach .profile .profilebox .c_03>.career>li {
+    margin-top: 2px;
+}
+.s_coach .profile .profilebox .c_04 {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #aa9c82;
+    border-left: none;
+    box-sizing: border-box;
+    float: left;
+}
+.s_coach .profile .profilebox .c_04 .p_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.s_coach .profile .profilebox .c_04 .p_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.s_coach .profile .profilebox .c_04>h4 {
+    text-align: center;
+    margin: 20px auto;
+}
+.s_coach .profile .profilebox .c_04>.career {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 12px;
+    width: 250x;
+    height: 160px;
+    padding: 5px 10px;
+    /*background-color: lightgray;*/
+}
+.s_coach .profile .profilebox .c_04>.career>li {
+    margin-top: 2px;
+}
+/*WELLNES CLUB & SPECIAL CLASS CLUB*/
+.club {
+    width: 100%;
+    height: 1200px;
+    /*background-color: lightblue;
+    border: 1px solid coral;*/
+    overflow: hidden;
+    margin-top: 100px;
+    position: relative;
+}
+.club>h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+.club .location {
+    width: 20px;
+    height: 20px;
+    /*border: 1px solid rebeccapurple;*/
+    float: left;
+    position: absolute;
+    left: 46%;
+    top: 13.1%;
+}
+.club>h4 {
+    /*border: 1px solid;*/
+    float: left;
+    position: absolute;
+    left: 47.55%;
+    top: 13%;
+}
+.club .club_imgbox {
+    width: 1170px;
+    height: 700px;
+    margin: 70px auto;
+    background-color: #bce7a7;
+    position: relative;
+    overflow: hidden;
+}
+.club .club_imgbox>a {
+    display: block;
+    position: absolute;
+}
+.club .club_imgbox>a>img {
+    width: 100%;
+    height: 100%;
+}
+/*footer*/
+footer {
+    width: 100%;
+    height: 700px;
+    background-color: #948b8b;
+    overflow: hidden;
+    position: relative;
+}
+footer .ftimg {
+    width: 100%;
+    height: 400px;
+    /*border: 1px solid;*/
+}
+footer .ftimg img{
+    width: 100%;
+    height: 100%;
+}
+footer .sns {
+    width: 120px;
+    height: 40px;
+    /*background-color: aqua;*/
+    margin-top: 50px;
+    margin-left: 190px;
+}
+footer .sns .facebook {
+    float: left;
+    /*border: 1px solid;*/
+    margin: 10px;
+}
+footer .sns .youtube {
+    float: left;
+    /*border: 1px solid;*/
+    margin: 10px;
+}
+footer .sns .instagram {
+    float: left;
+    /*border: 1px solid;*/
+    margin: 10px;
+}
+footer .f_text {
+    width: 690px;
+    height: 70px;
+    /*border: 1px solid;*/
+    margin-left: 200px;
+    margin-top: 30px;
+}
+footer .f_text span {
+    font-size: 12px;
+}
+footer .f_list {
+    width: 410px;
+    height: 45px;
+    /*background-color: #bce7a7;*/
+    margin-left: 190px;
+    margin-top: 20px;
+    list-style: none;
+}
+footer .f_list li {
+    font-size: 16px;
+    float: left;
+    /*border: 1px solid;*/
+    margin: 10px;
+}
+.f_logo {
+    width: 120px;
+    height: 100px;
+    /*background-color: blueviolet;*/
+    font-size: 32px;
+    font-family: "Paytone One", serif;
+    font-weight: bold;
+    text-align: center;
+    color: #203218;
+    position: absolute;
+    right: 200px;
+    bottom: 15%;
+}
+/*반응형 미디어 쿼리 지정*/
+/*1600px 미만일 때*/
+@media screen and (max-width:1599px){
+    /*header*/
+    header {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    header>.logo {
+        margin: 0 auto;
+    }
+    header>.mainmenu {
+        width: 80%;
+        /*border: 1px solid red;*/
+        left: 8%;
+    }
+    header>.mainmenu>li{
+        font-size: 20px;
+        padding: 5px;
+        margin: 20px 10px;
+    }
+    /*page title*/
+    .p_title {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    /*WELLNESS PROGRAM*/
+    .wp {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .wp>h1 {
+        margin-left: 130px;
+    }
+    /*WELLNES PROGRAM TIME TABLE*/
+    .w_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_time .clock {
+        margin-left: 130px;
+    }
+    /*WELLNES COACH*/
+    .w_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_coach .title {
+        margin-left: 130px;
+    }
+    /*SPECIAL PROGRAM*/
+    .special {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .special>h1 {
+        margin-left: 130px;
+    }
+    /*SPECIAL PROGRAM TABLE*/
+    .s_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_time .icon {
+        margin-left: 130px;
+    }
+    /*SPECIAL PROGRAM COACH*/
+    .s_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_coach .title {
+        margin-left: 130px;
+    }
+}
+/*1200px 미만일 때*/
+@media screen and (max-width:1199px){
+    /*header*/
+    header {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    header>.logo {
+        margin: 0 auto;
+    }
+    header>.mainmenu {
+        width: 95%;
+        /*border: 1px solid red;*/
+        left: 2%;
+    }
+    header>.mainmenu>li{
+        font-size: 18px;
+        width: 140px;
+        padding: 1px;
+        margin: 20px 0px;
+        /*border: 1px solid red;*/
+    }
+    header>.mainmenu>li:nth-child(2) {
+        margin-left: -30px;
+    }
+    header>.mainmenu>li:nth-child(3) {
+        margin-left: -20px;
+    }
+    header>.mainmenu>li:nth-child(5) {
+        margin-left: 15px;
+    }
+    .login>li {
+        font-size: 12px;
+        width: 55px;
+        padding: 1px;
+        /*border: 1px solid red;*/
+    }
+    /*page title*/
+    .p_title {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    /*page sub title*/
+    .subtitle {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    /*WELLNESS PROGRAM*/
+    .wp {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .wp>h1 {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 70px;
+    }
+    .wellness {
+        width: 90%;
+    }
+    .wellness .program_slide li> .imgbox{
+        width: 43%;
+        height: 700px;
+        float: left;
+        /*background-color: aquamarine;*/
+    }
+    .wellness .program_slide li> .textbox{
+        width: 49%;
+        height: 700px;
+        float: left;
+        /*background-color: lightgreen;*/
+    }
+    .wellness .program_slide li> .textbox>p {
+        width: 435px;
+    }
+    /*WELLNES PROGRAM TIME TABLE*/
+    .w_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_time .clock {
+        margin-left: 65px;
+    }
+    .w_time .w_schedule {
+        width: 90%;
+    }
+    .w_text {
+        width: 90%;
+    }
+    /*WELLNES COACH*/
+    .w_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_coach .title {
+        margin-left: 70px;
+    }
+    /*WELLNES COACH PROFILE*/
+    .w_coach .profile {
+        width: 90%;
+    }
+    .w_coach .profile .profilebox  {
+        width: 98%;
+    }
+    /*SPECIAL PROGRAM*/
+    .special {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .special>h1 {
+        font-size: 30px;
+        margin-left: 70px;
+    }
+    .s_program {
+        width: 90%;
+    }
+    .s_programslide li>.imgbox {
+        width: 43%;
+        height: 700px;
+        float: left;
+        /*background-color: lightcoral;*/
+    }
+    .s_programslide li>.textbox {
+        width: 49.55%;
+        height: 700px;
+        float: left;
+    }
+    /*SPECIAL PROGRAM TABLE*/
+    .s_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_time .icon {
+        margin-left: 70px;
+    }
+    .s_schedule {
+        width: 90%;
+    }
+    .s_text {
+        width: 90%;
+    }
+    /*SPECIAL PROGRAM COACH*/
+    .s_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_coach .title {
+        margin-left: 70px;
+    }
+    /*SPECIAL PROGRAM COACH profile*/
+     .s_coach .profile {
+        width: 90%;
+    }
+    .s_coach .profile .profilebox  {
+        width: 98%;
+    }
+    /*WELLNES CLUB & SPECIAL CLASS CLUB*/
+    .club {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .club .club_imgbox {
+        width: 90%;
+        height: 650px;
+    }
+    .club .club_imgbox>a>img {
+        width: 100%;
+        height: 650px;
+    }
+    /*footer*/
+    footer {
+        width: 100%;
+        transition-duration:0.7s;  
+    }
+    footer .sns {
+        margin-left: 90px;
+    }
+    footer .f_list li {
+        font-size: 15px;
+    }
+    footer .f_text {
+        width: 500px;
+        /*border: 1px solid red;*/
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+    footer .f_text span {
+        font-size: 10px;
+    }
+    footer .f_list {
+        margin-left: 90px;
+    }
+    footer .f_list li {
+        font-size: 12px;
+    }
+    .f_logo {
+        right: 100px;
+    }
+}
+/*900px 미만일 때*/
+@media screen and (max-width:899px){
+    /*header*/
+    header {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    header>.logo {
+        margin: 0 auto;
+    }
+    header>.mainmenu {
+        width: 95%;
+        /*border: 1px solid red;*/
+        left: 2%;
+    }
+    header>.mainmenu>li{
+        font-size: 16px;
+        width: 140px;
+        padding: 1px;
+        margin: 20px 0px;
+        /*border: 1px solid red;*/
+    }
+    .login>li {
+        font-size: 12px;
+        width: 55px;
+        padding: 1px;
+        /*border: 1px solid red;*/
+    }
+    /*page title*/
+    .p_title {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    /*page sub title*/
+    .subtitle {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .subtitle>h2 {
+        font-size: 20px;
+    }
+    /*WELLNESS PROGRAM*/
+    .wp {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .wp>h1 {
+        font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 45px;
+    }
+    .wellness {
+        width: 90%;
+        height: 640px;
+    }
+    .wellness .program_slide li> .imgbox{
+        width: 34%;
+        height: 600px;
+        float: left;
+        /*background-color: aquamarine;*/
+    }
+    .wellness .program_slide li> .textbox{
+        width: 35%;
+        height: 600px;
+        float: left;
+        /*background-color: lightgreen;*/
+    }
+    .wellness .program_slide li> .textbox>h3 {
+        font-size: 18px;
+    }
+    .wellness .program_slide li> .textbox>p {
+        width: 380px;
+        font-size: 14px;
+    }
+    .wellness .program_slide li> .textbox>h4 {
+        font-size: 15px;
+    }
+    .wellness .program_slide li>.textbox>.guide {
+        width: 180px;
+        font-size: 13px;
+    }
+    /*WELLNES PROGRAM TIME TABLE*/
+    .w_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_time .clock {
+        margin-left: 40px;
+    }
+    .w_time .w_schedule {
+        width: 90%;
+        font-size: 14px;
+    }
+    .w_schedule .red {
+        font-size: 11px;
+    }
+    .w_text {
+        width: 90%;
+    }
+    .w_text>li {
+        font-size: 12px;
+    }
+    /*WELLNES COACH*/
+    .w_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_coach .title {
+        margin-left: 70px;
+    }
+    /*WELLNES COACH PROFILE*/
+    .w_coach .profile {
+        width: 90%;
+    }
+    .w_coach .profile .profilebox  {
+        width: 98%;
+    }
+    .w_coach .profile .profilebox .c_01>h4 {
+        font-size: 15px;
+    }
+    .w_coach .profile .profilebox .c_01>.career {
+        font-size: 11px;
+    }
+    .w_coach .profile .profilebox .c_02>h4 {
+        font-size: 15px;
+    }
+    .w_coach .profile .profilebox .c_02>.career {
+        font-size: 11px;
+    }
+    .w_coach .profile .profilebox .c_03>h4 {
+        font-size: 15px;
+    }
+    .w_coach .profile .profilebox .c_03>.career {
+        font-size: 11px;
+    }
+    .w_coach .profile .profilebox .c_04>h4 {
+        font-size: 15px;
+    }
+    .w_coach .profile .profilebox .c_04>.career {
+        font-size: 11px;
+    }
+    /*SPECIAL PROGRAM*/
+    .special {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .special>h1 {
+        font-size: 30px;
+        margin-left: 45px;
+    }
+    .s_program {
+        width: 90%;
+        height: 600px;
+    }
+    .s_programslide li>.imgbox {
+        width: 34%;
+        height: 600px;
+        float: left;
+        /*background-color: lightcoral;*/
+    }
+    .s_programslide li>.textbox {
+        width: 35.55%;
+        height: 600px;
+        float: left;
+        /*background-color: lightblue;*/
+    }
+    .s_programslide li>.textbox .program_tit {
+        width: 370px;
+        height: 38px;
+        /*background-color: lightsalmon;*/
+    }
+    .s_programslide li>.textbox .program_tit>h2 {
+        font-size: 18px;
+        /*border: 1px solid;*/
+    }
+    .s_programslide li>.textbox .program_tit>h2:nth-child(1) {
+        width: 220px;
+        margin-left: 10px;
+    }
+    .s_programslide li>.textbox .program_tit>h2:nth-child(2) {
+        width: 130px;
+    }
+    .s_programslide li>.textbox>p {
+        width: 385px;
+        font-size: 14px;
+    }
+    .s_programslide li>.textbox>h4 {
+        margin-top: 140px;
+    }
+    /*SPECIAL PROGRAM TABLE*/
+    .s_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_time .icon {
+        margin-left: 40px;
+    }
+    .s_time .s_schedule {
+        width: 90%;
+        font-size: 14px;
+    }
+    .s_schedule .red {
+        font-size: 11px;
+    }
+    .s_text {
+        width: 90%;
+    }
+    .s_text>li {
+        font-size: 12px;
+    }
+    /*SPECIAL PROGRAM COACH*/
+    .s_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_coach .title {
+        margin-left: 45px;
+    }
+    /*SPECIAL PROGRAM COACH profile*/
+     .s_coach .profile {
+        width: 90%;
+    }
+    .s_coach .profile .profilebox  {
+        width: 98%;
+    }
+    .s_coach .profile .profilebox .c_01>h4 {
+        font-size: 15px;
+    }
+    .s_coach .profile .profilebox .c_01>.career {
+        font-size: 11px;
+    }
+    .s_coach .profile .profilebox .c_02>h4 {
+        font-size: 15px;
+    }
+    .s_coach .profile .profilebox .c_02>.career {
+        font-size: 11px;
+    }
+    .s_coach .profile .profilebox .c_03>h4 {
+        font-size: 15px;
+    }
+    .s_coach .profile .profilebox .c_03>.career {
+        font-size: 11px;
+    }
+    .s_coach .profile .profilebox .c_04>h4 {
+        font-size: 15px;
+    }
+    .s_coach .profile .profilebox .c_04>.career {
+        font-size: 11px;
+    }
+    /*WELLNES CLUB & SPECIAL CLASS CLUB*/
+    .club {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .club >h2 {
+        font-size: 22px;
+    }
+    .club .location {
+        left: 45%;
+    }
+    .club>h4 {
+        font-size: 15px;
+    }
+    .club .club_imgbox {
+        width: 90%;
+        height: 600px;
+    }
+    .club .club_imgbox>a>img {
+        width: 100%;
+        height: 600px;
+    }
+    /*footer*/
+    footer {
+        width: 100%;
+        transition-duration:0.7s;  
+    }
+    footer .sns {
+        margin-left: 90px;
+    }
+    footer .f_text {
+        width: 370px;
+        height: 110px;
+        /*border: 1px solid red;*/
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+    footer .f_text span {
+        font-size: 10px;
+    }
+    footer .f_list {
+        margin-left: 90px;
+        margin-top: -10px;
+    }
+    footer .f_list li {
+        font-size: 12px;
+    }
+    .f_logo {
+        right: 100px;
+    }
+}
+/*680px 미만일 때*/
+@media screen and (max-width:679px){
+    /*header*/
+    header {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    header>.logo {
+        margin: 0 auto;
+        font-size: 28px;
+    }
+    header>.mainmenu {
+        width: 95%;
+       /*border: 1px solid red;*/
+        left: 2%;
+    }
+    header>.mainmenu>li{
+        font-size: 12px;
+        width: 100px;
+        padding: 1px;
+        margin: 20px 3px;
+        /*border: 1px solid red;*/
+    }
+    .login {
+        width: 140px;
+        right: 4%;
+    }
+    .login>li {
+        font-size: 10px;
+        width: 40px;
+        padding: 1px;
+       /*border: 1px solid red;*/
+    }
+    /*page title*/
+    .p_title {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    /*page sub title*/
+    .subtitle {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .subtitle>h2 {
+        font-size: 18px;
+    }
+    /*WELLNESS PROGRAM*/
+    .wp {
+        width: 100%;
+        height: 710px;
+        transition-duration:0.7s;
+    }
+    .wp>h1 {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 45px;
+    }
+    .wellness {
+        width: 90%;
+        height: 540px;
+    }
+    .wellness .p_title li {
+        font-size: 14px;
+    }
+    .wellness .program_slide li> .imgbox{
+        width: 25%;
+        height: 500px;
+        float: left;
+        /*background-color: aquamarine;*/
+    }
+    .wellness .program_slide li> .textbox{
+        width: 27.55%;
+        height: 500px;
+        float: left;
+        /*background-color: lightgreen;*/
+    }
+    .wellness .program_slide li> .textbox>h3 {
+        font-size: 16px;
+        margin-top: 70px;
+    }
+    .wellness .program_slide li> .textbox>p {
+        width: 300px;
+        font-size: 12px;
+    }
+    .wellness .program_slide li> .textbox>h4 {
+        font-size: 14px;
+        margin-top: 110px;
+    }
+    .wellness .program_slide li>.textbox>.guide {
+        width: 180px;
+        font-size: 12px;
+    }
+    /*WELLNES PROGRAM TIME TABLE*/
+    .w_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_time .clock {
+        width: 20px;
+        height: 20px;
+        /*border: 1px solid;*/
+        margin-top: 5px;
+        margin-left: 40px;
+    }
+    .w_time>h3 {
+        font-size: 18px;
+    }
+    .w_time .w_schedule {
+        width: 90%;
+        font-size: 12px;
+    }
+    .w_schedule .red {
+        font-size: 10px;
+    }
+    .w_text {
+        width: 90%;
+    }
+    .w_text>li {
+        font-size: 11px;
+    }
+    /*WELLNES COACH*/
+    .w_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_coach .title {
+        margin-left: 40px;
+    }
+    /*WELLNES COACH PROFILE*/
+    .w_coach .profile {
+        width: 90%;
+    }
+    .w_coach .profile .profilebox  {
+        width: 98%;
+    }
+    .w_coach .profile .profilebox .c_01 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .w_coach .profile .profilebox .c_01>h4 {
+        font-size: 13px;
+    }
+    .w_coach .profile .profilebox .c_01>.career {
+        font-size: 10px;
+    }
+    .w_coach .profile .profilebox .c_02 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .w_coach .profile .profilebox .c_02>h4 {
+        font-size: 13px;
+    }
+    .w_coach .profile .profilebox .c_02>.career {
+        font-size: 10px;
+    }
+    .w_coach .profile .profilebox .c_03 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .w_coach .profile .profilebox .c_03>h4 {
+        font-size: 13px;
+    }
+    .w_coach .profile .profilebox .c_03>.career {
+        font-size: 10px;
+    }
+    .w_coach .profile .profilebox .c_04 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .w_coach .profile .profilebox .c_04>h4 {
+        font-size: 13px;
+    }
+    .w_coach .profile .profilebox .c_04>.career {
+        font-size: 10px;
+    }
+    /*SPECIAL PROGRAM*/
+    .special {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .special>h1 {
+        font-size: 22px;
+        margin-left: 45px;
+    }
+    .s_program {
+        width: 90%;
+        height: 500px;
+    }
+    .s_programslide li>.imgbox {
+        width: 25%;
+        height: 500px;
+        float: left;
+        /*background-color: lightcoral;*/
+    }
+    .s_programslide li>.textbox {
+        width: 27%;
+        height: 500px;
+        float: left;
+        /*background-color: lightblue;*/
+    }
+    .s_programslide li>.textbox .program_tit {
+        width: 280px;
+        height: 38px;
+        /*background-color: lightsalmon;*/
+    }
+    .s_programslide li>.textbox .program_tit>h2 {
+        font-size: 16px;
+        /*border: 1px solid;*/
+    }
+    .s_programslide li>.textbox .program_tit>h2:nth-child(1) {
+        width: 180px;
+        margin-left: 0px;
+    }
+    .s_programslide li>.textbox .program_tit>h2:nth-child(2) {
+        width: 95px;
+    }
+    .s_programslide li>.textbox>p {
+        width: 250px;
+        font-size: 12px;
+    }
+    .s_programslide li>.textbox>h4 {
+        margin-top: 100px;
+        font-size: 14px;
+    }
+    .s_programslide li>.textbox .guide {
+        font-size: 12px;
+        margin: 10px auto;
+    }
+    /*SPECIAL PROGRAM TABLE*/
+    .s_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_time .icon {
+        width: 20px;
+        height: 20px;
+        /*border: 1px solid;*/
+        margin-top: 5px;
+        margin-left: 40px;
+    }
+    .s_time>h3 {
+        font-size: 18px;
+    }
+    .s_time .s_schedule {
+        width: 90%;
+        font-size: 12px;
+    }
+    .s_schedule .red {
+        font-size: 10px;
+    }
+    .s_text {
+        width: 90%;
+    }
+    .s_text>li {
+        font-size: 11px;
+    }
+    /*SPECIAL PROGRAM COACH*/
+    .s_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_coach .title {
+        margin-left: 45px;
+    }
+    /*SPECIAL PROGRAM COACH profile*/
+     .s_coach .profile {
+        width: 90%;
+    }
+    .s_coach .profile .profilebox  {
+        width: 98%;
+    }
+    .s_coach .profile .profilebox .c_01 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .s_coach .profile .profilebox .c_01>h4 {
+        font-size: 13px;
+    }
+    .s_coach .profile .profilebox .c_01>.career {
+        font-size: 10px;
+    }
+    .s_coach .profile .profilebox .c_02 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .s_coach .profile .profilebox .c_02>h4 {
+        font-size: 13px;
+    }
+    .s_coach .profile .profilebox .c_02>.career {
+        font-size: 10px;
+    }
+    .s_coach .profile .profilebox .c_03 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .s_coach .profile .profilebox .c_03>h4 {
+        font-size: 13px;
+    }
+    .s_coach .profile .profilebox .c_03>.career {
+        font-size: 10px;
+    }
+    .s_coach .profile .profilebox .c_04 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .s_coach .profile .profilebox .c_04>h4 {
+        font-size: 13px;
+    }
+    .s_coach .profile .profilebox .c_04>.career {
+        font-size: 10px;
+    }
+    /*WELLNES CLUB & SPECIAL CLASS CLUB*/
+    .club {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .club >h2 {
+        font-size: 20px;
+    }
+    .club .location {
+        left: 44%;
+    }
+    .club>h4 {
+        font-size: 14px;
+    }
+    .club .club_imgbox {
+        width: 90%;
+        height: 500px;
+    }
+    .club .club_imgbox>a>img {
+        width: 100%;
+        height: 500px;
+    }
+    /*footer*/
+    footer {
+        width: 100%;
+        transition-duration:0.7s;  
+    }
+    footer .sns {
+        margin-left: 45px;
+    }
+    footer .f_text {
+        width: 370px;
+        height: 110px;
+        /*border: 1px solid red;*/
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+    footer .f_text span {
+        font-size: 10px;
+    }
+    footer .f_list {
+        margin-left: 40px;
+        margin-top: -10px;
+    }
+    footer .f_list li {
+        font-size: 12px;
+    }
+    .f_logo {
+        right: 45px;
+        font-size: 28px;
+    }
+}
+/*540px 미만일 때*/
+@media screen and (max-width:539px){
+    /*header*/
+    header {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    header>.logo {
+        margin: 0 auto;
+        font-size: 26px;
+    }
+    header>.mainmenu {
+        width: 95%;
+        /*border: 1px solid red;*/
+        right: 17%;
+    }
+    header>.mainmenu>li{
+        font-size: 12px;
+        width: 90px;
+        padding: 1px;
+        margin: 20px 0px;
+        /*border: 1px solid red;*/
+    }
+    header>.mainmenu>li:nth-child(1) {
+        margin-left:-15px;
+    }
+    header>.mainmenu>li:nth-child(2) {
+        margin-left:-22px;
+    }
+    header>.mainmenu>li:nth-child(3) {
+        margin-left:-10px;
+    }
+    header>.mainmenu>li:nth-child(5) {
+        margin-left: 12px;
+    }
+    .login {
+        width: 140px;
+        right: 4%;
+    }
+    .login>li {
+        font-size: 10px;
+        width: 40px;
+        padding: 1px;
+       /*border: 1px solid red;*/
+    }
+    /*page title*/
+    .p_title {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .p_title .title>h1 {
+        font-size: 22px;
+    }
+    /*page sub title*/
+    .subtitle {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .subtitle>h2 {
+        font-size: 18px;
+    }
+    /*WELLNESS PROGRAM*/
+    .wp {
+        width: 100%;
+        height: 610px;
+        /*background-color: lightcoral;*/
+        transition-duration:0.7s;
+    }
+    .wp>h1 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 27px;
+    }
+    .wellness {
+        width: 90%;
+        height: 490px;
+    }
+    .wellness .p_title li {
+        font-size: 12px;
+    }
+    .wellness .program_slide li> .imgbox{
+        width: 19%;
+        height: 500px;
+        float: left;
+        /*background-color: aquamarine;*/
+    }
+    .wellness .program_slide li> .textbox{
+        width: 21.55%;
+        height: 500px;
+        float: left;
+        /*background-color: lightgreen;*/
+    }
+    .wellness .program_slide li> .textbox>h3 {
+        font-size: 14px;
+        margin-top: 50px;
+    }
+    .wellness .program_slide li> .textbox>p {
+        width: 220px;
+        font-size: 10px;
+    }
+    .wellness .program_slide li> .textbox>h4 {
+        font-size: 12px;
+        margin-top: 110px;
+    }
+    .wellness .program_slide li>.textbox>.guide {
+        width: 110px;
+        font-size: 10px;
+    }
+    /*WELLNES PROGRAM TIME TABLE*/
+    .w_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_time .clock {
+        width: 20px;
+        height: 20px;
+        /*border: 1px solid;*/
+        margin-top: 3px;
+        margin-left: 30px;
+    }
+    .w_time>h3 {
+        font-size: 16px;
+    }
+    .w_time .w_schedule {
+        width: 90%;
+        font-size: 10px;
+    }
+    .w_schedule .red {
+        font-size: 9px;
+    }
+    .w_text {
+        width: 90%;
+    }
+    .w_text>li {
+        font-size: 10px;
+    }
+    /*WELLNES COACH*/
+    .w_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .w_coach .title {
+        margin-left: 30px;
+    }
+    /*WELLNES COACH PROFILE*/
+    .w_coach .profile {
+        width: 90%;
+    }
+    .w_coach .profile .profilebox  {
+        width: 98%;
+    }
+    .w_coach .profile .profilebox .c_01 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .w_coach .profile .profilebox .c_01>h4 {
+        font-size: 13px;
+    }
+    .w_coach .profile .profilebox .c_01>.career {
+        font-size: 10px;
+    }
+    .w_coach .profile .profilebox .c_02 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .w_coach .profile .profilebox .c_02>h4 {
+        font-size: 13px;
+    }
+    .w_coach .profile .profilebox .c_02>.career {
+        font-size: 10px;
+    }
+    .w_coach .profile .profilebox .c_03 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .w_coach .profile .profilebox .c_03>h4 {
+        font-size: 13px;
+    }
+    .w_coach .profile .profilebox .c_03>.career {
+        font-size: 10px;
+    }
+    .w_coach .profile .profilebox .c_04 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .w_coach .profile .profilebox .c_04>h4 {
+        font-size: 13px;
+    }
+    .w_coach .profile .profilebox .c_04>.career {
+        font-size: 10px;
+    }
+    /*SPECIAL PROGRAM*/
+    .special {
+        width: 100%;
+        height: 650px;
+        /*background-color: lightcoral;*/
+        transition-duration:0.7s;
+    }
+    .special>h1 {
+        font-size: 20px;
+        margin-left: 27px;
+    }
+    .s_program {
+        width: 90%;
+        height: 450px;
+    }
+    .s_programslide li>.imgbox {
+        width: 19%;
+        height: 500px;
+        float: left;
+        /*background-color: lightcoral;*/
+    }
+    .s_programslide li>.textbox {
+        width: 22%;
+        height: 500px;
+        float: left;
+        /*background-color: lightblue;*/
+    }
+    .s_programslide li>.textbox .program_tit {
+        width: 249px;
+        height: 38px;
+        margin-left: 0px;
+        /*background-color: lightsalmon;*/
+    }
+    .s_programslide li>.textbox .program_tit>h2 {
+        font-size: 14px;
+        /*border: 1px solid;*/
+    }
+    .s_programslide li>.textbox .program_tit>h2:nth-child(1) {
+        width: 158px;
+        margin-left: 0px;
+    }
+    .s_programslide li>.textbox .program_tit>h2:nth-child(2) {
+        width: 87px;
+    }
+    .s_programslide li>.textbox>p {
+        width: 210px;
+        font-size: 10px;
+        margin: 60px auto;
+    }
+    .s_programslide li>.textbox>h4 {
+        margin-top: 100px;
+        font-size: 12px;
+    }
+    .s_programslide li>.textbox .guide {
+        width: 70px;
+        font-size: 10px;
+        margin: 10px auto;
+    }
+    /*SPECIAL PROGRAM TABLE*/
+    .s_time {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_time .icon {
+        width: 20px;
+        height: 20px;
+        /*border: 1px solid;*/
+        margin-top: 3px;
+        margin-left: 30px;
+    }
+    .s_time>h3 {
+        font-size: 16px;
+    }
+    .s_time .s_schedule {
+        width: 90%;
+        font-size: 10px;
+    }
+    .s_schedule .red {
+        font-size: 10px;
+    }
+    .s_text {
+        width: 90%;
+    }
+    .s_text>li {
+        font-size: 10px;
+    }
+    /*SPECIAL PROGRAM COACH*/
+    .s_coach {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .s_coach .title {
+        margin-left: 30px;
+    }
+    /*SPECIAL PROGRAM COACH profile*/
+     .s_coach .profile {
+        width: 90%;
+    }
+    .s_coach .profile .profilebox  {
+        width: 98%;
+    }
+    .s_coach .profile .profilebox .c_01 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .s_coach .profile .profilebox .c_01>h4 {
+        font-size: 13px;
+    }
+    .s_coach .profile .profilebox .c_01>.career {
+        font-size: 10px;
+    }
+    .s_coach .profile .profilebox .c_02 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .s_coach .profile .profilebox .c_02>h4 {
+        font-size: 13px;
+    }
+    .s_coach .profile .profilebox .c_02>.career {
+        font-size: 10px;
+    }
+    .s_coach .profile .profilebox .c_03 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .s_coach .profile .profilebox .c_03>h4 {
+        font-size: 13px;
+    }
+    .s_coach .profile .profilebox .c_03>.career {
+        font-size: 10px;
+    }
+    .s_coach .profile .profilebox .c_04 .p_img {
+        width: 100px;
+        height: 100px;
+    }
+    .s_coach .profile .profilebox .c_04>h4 {
+        font-size: 13px;
+    }
+    .s_coach .profile .profilebox .c_04>.career {
+        font-size: 10px;
+    }
+    /*WELLNES CLUB & SPECIAL CLASS CLUB*/
+    .club {
+        width: 100%;
+        height: 1000px;
+        /*background-color: lightcoral;*/
+        transition-duration:0.7s;
+    }
+    .club >h2 {
+        font-size: 18px;
+    }
+    .club .location {
+        left: 43%;
+        margin-top: -3px;
+    }
+    .club>h4 {
+        font-size: 12px;
+    }
+    .club .club_imgbox {
+        width: 90%;
+        height: 450px;
+    }
+    .club .club_imgbox>a>img {
+        width: 100%;
+        height: 450px;
+    }
+     /*footer*/
+     footer {
+        width: 100%;
+        transition-duration:0.7s;  
+    }
+    footer .sns {
+        margin-left: 5px;
+    }
+    footer .f_text {
+        width: 280px;
+        height: 105px;
+        /*border: 1px solid red;*/
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    footer .f_text span {
+        font-size: 9px;
+    }
+    footer .f_list {
+        margin-left: 2px;
+        margin-top: 20px;
+    }
+    footer .f_list li {
+        font-size: 11px;
+    }
+    .f_logo {
+        right: -2%;
+        bottom: 12%;
+        font-size: 20px;
+    }
+}

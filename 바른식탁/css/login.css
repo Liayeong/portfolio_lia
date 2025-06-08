@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+body {
+    font-family: "Gowun Batang", serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #404040;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+ul, li {
+   list-style: none;
+}
+img {
+   display: block;
+}
+a {
+   text-decoration: none;
+   color: inherit;
+}
+/*header*/
+header {
+    width: 100%;
+    height: 250px;
+    /*background-color: antiquewhite;*/
+    position: relative;
+}
+header .top {
+    width: 100%;
+    height: 50px;
+    background-color: #3e583f;
+}
+.t_menu {
+    width: 250px;
+    height: 30px;
+    /*background-color: aqua;*/
+    font-size: 14px;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+.t_menu li {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 20px;
+    /*border: 1px solid red;*/
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 20px;
+    color: #eeeee3;
+}
+header .mid {
+    width: 100%;
+    height: 150px;
+    /*background-color: azure;*/
+}
+.mid .logo {
+    width: 270px;
+    height: 100px;
+    /*background-color: aquamarine;*/
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.mid .logo img {
+    width: 100%;
+    height: 100%;
+}
+.mid_icon {
+    width: 480px;
+    height: 50px;
+    /*background-color: lightpink;*/
+    position: absolute;
+    right: 10%;
+    top: 40%;
+}
+.mid .search {
+    width: 320px;
+    height: 50px;
+    /*border: 1px solid rebeccapurple;*/
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+.s_iconbox {
+    width: 40px;
+    height: 40px;
+    /*border: 1px solid salmon;*/
+    box-sizing: border-box;
+    position: absolute;
+    right: 10%;
+    top: 9%;
+}
+.s_iconbox img {
+    width: 100%;
+    height: 100%;
+}
+.mid .search input[type=text] {
+    width: 300px;
+    height: 40px;
+    background-color:#dedfdd;
+    border-radius: 10px;
+    border: none;
+    float: left;
+    margin: 4px 8px;
+    margin-right: 20px;
+    position: absolute;
+    padding-left: 10px;
+}
+.mid .personal {
+    width: 50px;
+    height: 50px;
+    /*border: 1px solid;*/ 
+    box-sizing: border-box;
+    float: left;
+    margin-right: 20px;
+}
+.mid .personal img {
+    width: 100%;
+    height: 100%;
+}
+.mid .s_bag{
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    /*border: 1px solid;*/
+    float: left;
+}
+.mid .s_bag img {
+    width: 100%;
+    height: 100%;
+}
+header .bottom {
+    width: 100%;
+    height: 50px;
+    background-color: #3e583f;
+}
+.b_menu {
+    width: 580px;
+    height: 23px;
+    /*background-color: aqua;*/
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+}
+.b_menu>li {
+    font-family: "Roboto Mono", serif;
+    display: block;
+    float: left;
+    width: 100px;
+    height: 20px;
+    /*border: 1px solid red;*/
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 20px;
+    color: #b3b39b;
+}
+.b_menu .easy {
+    width: 165px;
+    height: 20px;
+}
+/* b_menu>li   호버*/
+.b_menu>li:hover {
+    color: #EBF0DE;
+}
+/*quick bar*/
+.quickbar {
+    width: 70px;
+    height: 260px;
+    background-color:#eeeee3;
+    border-radius: 15px;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.q_icon {
+    width: 40px;
+    height: 40px;
+    /*border: 1px solid lightcoral;*/
+    margin: auto 15px;
+    margin-top: 10px;
+}
+.quickbar .up {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto 15px;
+    margin-top: 10px;
+    background-color: lightgoldenrodyellow;
+}
+.q_icon img {
+    width: 100%;
+    height: 100%;
+}
+.quickbar .up img {
+    width: 100%;
+    height: 100%;
+}
+/*login*/
+.login {
+    width: 100%;
+    height: 600px;
+    /*background-color: lightgreen;*/
+    overflow: hidden;
+    margin-top: 200px;
+}
+.login form {
+    width: 340px;
+    height: 350px;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+form>h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+form>input[type=text] {
+    display: block;
+    width: 270px;
+    height: 40px;
+    font-size: 12px;
+    font-family: "Gowun Batang", serif;
+    border: 1px solid #B9D07E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+form>input[type=password] {
+    display: block;
+    width: 270px;
+    height: 40px;
+    font-family: "Gowun Batang", serif;
+    font-size: 12px;
+    border: 1px solid #B9D07E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 10px;   
+    padding-left: 10px;
+}
+form ul {
+    width: 170px;
+    height: 20px;
+    /*background-color: aquamarine;*/
+    float: right;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+form li {
+    /*border: 1px solid;*/
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-left: 10px;
+}
+form #b_login {
+    display: block;
+    width: 270px;
+    height: 40px;
+    font-family: "Gowun Batang", serif;
+    background-color: #B9D07E;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+form #b_sign{
+    display: block;
+    width: 270px;
+    height: 40px;
+    font-family: "Gowun Batang", serif;
+    border: 1px solid #B9D07E;
+    background: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*footer*/
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #404040;
+    position: relative;
+}
+.terms {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #8A8585;
+    box-sizing: border-box;
+    border-top: none;
+    border-right: none ;
+    border-left: none ;
+}
+.terms ul {
+    width: 1000px;
+    height: 100%;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    color: #F5F5F5;
+    margin: 0 auto;
+}
+.terms ul li {
+    width: 200px;
+    height: 60px;
+    /*border: 1px solid blueviolet;*/
+    box-sizing: border-box;
+    float: left;
+    margin: 5px 60px;
+    text-align: center;
+    line-height: 60px;
+}
+footer .f_logo {
+    width: 200px;
+    height: 80px;
+    /*background-color: aqua;*/
+    position: absolute;
+    left: 28%;
+    bottom: 24%;
+}
+footer .f_logo img {
+    width: 100%;
+    height: 100%;
+}
+footer>p {
+    color: #F5F5F5;
+    font-size: 14px;
+    position: absolute;
+    right: 28%;
+    bottom: 28%;
+}
