@@ -351,7 +351,7 @@ footer .f_list li {
         right: 100px;
     }
 }
-/*1199px 미만일 때*/
+/*1200px 미만일 때*/
 @media screen and (max-width:1199px){
      /*header*/
      header {

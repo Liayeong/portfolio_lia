@@ -17,7 +17,7 @@ a {
    text-decoration: none;
    color: inherit;
 }
-/*소개 메이네이지*/
+/*소개 메인페이지*/
 .introduction {
     width: 100%;
     height: 920px;
@@ -297,4 +297,526 @@ a {
     background-color: #f5ece0;
     color: #686666;
     font-family: "Gothic A1", serif;
+}
+/*반응형 미디어 쿼리 지정*/
+/*1600px 미만일 때*/
+@media screen and (max-width:1599px){
+    /*소개 메인페이지*/
+    .introduction{
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .introduction>p {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        width: 16%;
+        position: absolute;
+        top: 40%;
+        left: 11%;
+        color: #706f6f;
+        /*border: 1px solid #fff;*/
+    }
+    .introduction table {
+        width: 800px;
+        height: 500px;
+        border-collapse: collapse;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        border: 1px solid #fff;
+        color:  #e0dcdc;
+        border: none;
+        font-size: 15px;
+    }
+}
+/*1200px 미만일 때*/
+@media screen and (max-width:1199px){
+    /*메인 소개페이지*/
+    .introduction{
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .introduction>p {
+        font-size: 34px;
+        width: 18%;
+        top: 48%;
+        left: 9%;
+        /*border: 1px solid #fff;*/
+    }
+    .introduction table {
+        width: 650px;
+        height: 500px;
+        top: 26%;
+        right: 8%;
+        font-size: 14px;
+    }
+    /*메뉴 창*/
+    #wrap {
+    width: 100%;
+    transition-duration:0.7s;
+    }
+    .menu_bg {
+    width: 100%;
+    height: 100%;
+    transition-duration:0.7s;
+    }
+    .navi>li {
+    font-size: 40px;
+    margin-left: 300px;
+    }
+}
+/*900px 미만일 때*/
+@media screen and (max-width:899px){
+    /*메인 소개페이지*/
+    .introduction{
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .introduction>p {
+        font-size: 28px;
+        width: 20%;
+        top: 68%;
+        left: 7%;
+        /*border: 1px solid #fff;*/
+    }
+    .introduction table {
+        width: 480px;
+        height: 450px;
+        top: 40%;
+        right: 8%;
+        font-size: 13px;
+    }
+    .introduction table th {
+        width: 120px;
+    }
+    /*메뉴 창*/
+    #wrap {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .menu_bg {
+        width: 100%;
+        height: 100%;
+        transition-duration:0.7s;
+    }
+    .navi>li {
+        font-size: 38px;
+        margin-left: 250px;
+    }
+    /*취소 버튼*/
+    .cancel { /*라인 2개 감싸는 부모영역*/
+        width: 40px;
+        height: 38px;
+    }
+    .c_line { /*line 기본값*/
+        width: 36px;
+        height: 5px;
+    }
+    /*햄버거 버튼*/
+    .burger { /*라인 3개 감싸는 부모영역*/
+        width: 38px;
+        height: 46px;
+        transition-duration: 0.5s;
+    }
+    .line { /*line 기본값*/
+        width: 34px;
+        height: 4px;
+        transition-duration: 0.5s;
+    }
+    /*portfolio(1) conte jeju*/
+    .portfolio1 {
+         width: 100%;
+        height: 1080px;
+        transition-duration: 0.5s;
+    }
+    /* 포트폴리오1 웹 사이트 이름 */
+    .portfolio1 .p_title {
+        width: 500px;
+        height: 75px;
+        /*background-color: antiquewhite;*/
+        left: 50%;
+         top: 45%;
+    }
+    .portfolio1 .p_title>p {
+        font-size: 60px;
+    }
+    /* 포트폴리오1 웹 사이트 설명 */
+    .portfolio1 table {
+        width: 320px;
+        height: 80px;
+        /*background-color: lightgoldenrodyellow;*/
+        font-size: 14px;
+    }
+    .portfolio1 th:nth-child(1) {
+        width: 100px;
+    }
+    .portfolio1 td:nth-child(1) {
+        width: 100px;
+    }
+    /* 포트폴리오1 웹 사이트 바로가기 버튼 */
+    .portfolio1 .toolbar {
+        width: 240px;
+        height: 100px;
+        /*background-color: lightblue;*/
+        right: 3%;
+        bottom: 2%;
+    }
+    .portfolio1 .toolbar button {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    /*portfolio(2) 바른 식탁 */
+    .portfolio2 {
+        width: 100%;
+        height: 1080px;
+        transition-duration: 0.5s;
+    }   
+    /* 포트폴리오2 웹 사이트 이름 */
+    .portfolio2 .p_title {
+        width: 500px;
+        height: 75px;
+        /*background-color: antiquewhite;*/
+        left: 50%;
+        top: 45%;
+    }
+    .portfolio2 .p_title>p {
+        font-size: 60px;
+    }
+    /* 포트폴리오2 웹 사이트 설명 */
+    .portfolio2 table {
+        width: 320px;
+        height: 80px;
+        /*background-color: lightgoldenrodyellow;*/
+        font-size: 14px;
+    }
+    .portfolio2 th:nth-child(1) {
+        width: 100px;
+    }
+    .portfolio2 td:nth-child(1) {
+        width: 100px;
+    }
+    /* 포트폴리오2 웹 사이트 바로가기 버튼 */
+    .portfolio2 .toolbar {
+        width: 240px;
+        height: 100px;
+        /*background-color: lightblue;*/
+        right: 3%;
+        bottom: 2%;
+    }
+    .portfolio2 .toolbar button {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+/*680px 미만일 때*/
+@media screen and (max-width:679px){
+    /*메인 소개페이지*/
+    .introduction{
+        width: 100%;
+        height: 900px;
+        transition-duration:0.7s;
+    }
+    .introduction>p {
+        font-size: 24px;
+        width: 25%;
+        top: 68%;
+        left: 4%;
+        /*border: 1px solid #fff;*/
+    }
+    .introduction table {
+        width: 380px;
+        height: 400px;
+        top: 40%;
+        right: 6%;
+        font-size: 11px;
+    }
+    .introduction table th {
+        width: 50px;
+    }
+    .introduction table td {
+        padding: 10px 35px;
+    }
+    /*메뉴 창*/
+    #wrap {
+        width: 100%;
+        height: 900px;
+        transition-duration:0.7s;
+    }
+    .menu_bg {
+        width: 100%;
+        height: 100%;
+        transition-duration:0.7s;
+    }
+    .navi>li {
+        font-size: 34px;
+        margin-left: 100px;
+        line-height: 80px;
+    }
+    /*취소 버튼*/
+    .cancel { /*라인 2개 감싸는 부모영역*/
+        width: 40px;
+        height: 38px;
+    }
+    .c_line { /*line 기본값*/
+        width: 36px;
+        height: 5px;
+    }
+    /*햄버거 버튼*/
+    .burger { /*라인 3개 감싸는 부모영역*/
+        width: 38px;
+        height: 46px;
+        transition-duration: 0.5s;
+    }
+    .line { /*line 기본값*/
+        width: 34px;
+        height: 4px;
+        transition-duration: 0.5s;
+    }
+    /*portfolio(1) conte jeju*/
+    .portfolio1 {
+        width: 100%;
+        height: 900px;
+        transition-duration: 0.5s;
+    }
+    /* 포트폴리오1 웹 사이트 이름 */
+    .portfolio1 .p_title {
+        width: 300px;
+        height: 75px;
+        /*background-color: antiquewhite;*/
+        left: 50%;
+        top: 45%;
+    }
+    .portfolio1 .p_title>p {
+        font-size: 50px;
+    }
+    /* 포트폴리오1 웹 사이트 설명 */
+    .portfolio1 table {
+        width: 250px;
+        height: 80px;
+        /*background-color: lightgoldenrodyellow;*/
+        font-size: 13px;
+    }
+    .portfolio1 th:nth-child(1) {
+        width: 70px;
+    }
+    .portfolio1 td:nth-child(1) {
+        width: 70px;
+    }
+    /* 포트폴리오1 웹 사이트 바로가기 버튼 */
+    .portfolio1 .toolbar {
+        width: 200px;
+        height: 90px;
+        /*background-color: lightblue;*/
+        right: 3%;
+        bottom: 2%;
+    }
+    .portfolio1 .toolbar button {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    /*portfolio(2) 바른 식탁 */
+    .portfolio2 {
+        width: 100%;
+        height: 900px;
+        transition-duration: 0.5s;
+    }   
+    /* 포트폴리오2 웹 사이트 이름 */
+    .portfolio2 .p_title {
+        width: 220px;
+        height: 75px;
+        /*background-color: antiquewhite;*/
+        left: 50%;
+        top: 45%;
+    }
+    .portfolio2 .p_title>p {
+        font-size: 50px;
+    }
+    /* 포트폴리오2 웹 사이트 설명 */
+    .portfolio2 table {
+        width: 250px;
+        height: 80px;
+        /*background-color: lightgoldenrodyellow;*/
+        font-size: 13px;
+    }
+    .portfolio2 th:nth-child(1) {
+        width: 70px;
+    }
+    .portfolio2 td:nth-child(1) {
+        width: 70px;
+    }
+    /* 포트폴리오2 웹 사이트 바로가기 버튼 */
+    .portfolio2 .toolbar {
+        width: 200px;
+        height: 90px;
+        /*background-color: lightblue;*/
+        right: 3%;
+        bottom: 2%;
+    }
+    .portfolio2 .toolbar button {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+}
+/*540px 미만일 때*/
+@media screen and (max-width:539px){
+    /*메인 소개페이지*/
+    .introduction{
+        width: 100%;
+        height: 900px;
+        transition-duration:0.7s;
+    }
+    .introduction>p {
+        font-size: 20px;
+        width: 25%;
+        top: 68%;
+        left: 3%;
+        /*border: 1px solid #fff;*/
+    }
+    .introduction table {
+        width: 330px;
+        height: 350px;
+        top: 40%;
+        right: 5%;
+        font-size: 10px;
+    }
+    .introduction table th {
+        width: 40px;
+    }
+    .introduction table td {
+        padding: 10px 25px;
+    }
+    /*메뉴 창*/
+    #wrap {
+        width: 100%;
+        height: 900px;
+        transition-duration:0.7s;
+    }
+    .menu_bg {
+        width: 100%;
+        height: 100%;
+        transition-duration:0.7s;
+    }
+    .navi>li {
+        font-size: 30px;
+        margin-left: 60px;
+        line-height: 70px;
+    }
+    /*취소 버튼*/
+    .cancel { /*라인 2개 감싸는 부모영역*/
+        width: 40px;
+        height: 38px;
+    }
+    .c_line { /*line 기본값*/
+        width: 36px;
+        height: 5px;
+    }
+    /*햄버거 버튼*/
+    .burger { /*라인 3개 감싸는 부모영역*/
+        width: 38px;
+        height: 46px;
+        transition-duration: 0.5s;
+    }
+    .line { /*line 기본값*/
+        width: 34px;
+        height: 4px;
+        transition-duration: 0.5s;
+    }
+    /*portfolio(1) conte jeju*/
+    .portfolio1 {
+        width: 100%;
+        height: 900px;
+        transition-duration: 0.5s;
+    }
+    /* 포트폴리오1 웹 사이트 이름 */
+    .portfolio1 .p_title {
+        width: 270px;
+        height: 75px;
+        /*background-color: antiquewhite;*/
+        left: 50%;
+        top: 45%;
+    }
+    .portfolio1 .p_title>p {
+        font-size: 45px;
+    }
+    /* 포트폴리오1 웹 사이트 설명 */
+    .portfolio1 table {
+        width: 200px;
+        height: 70px;
+        /*background-color: lightgoldenrodyellow;*/
+        font-size: 11px;
+    }
+    .portfolio1 th:nth-child(1) {
+        width: 50px;
+    }
+    .portfolio1 td:nth-child(1) {
+        width: 50px;
+    }
+    /* 포트폴리오1 웹 사이트 바로가기 버튼 */
+    .portfolio1 .toolbar {
+        width: 180px;
+        height: 80px;
+        /*background-color: lightblue;*/
+        right: 3%;
+        bottom: 2%;
+    }
+    .portfolio1 .toolbar button {
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+    /*portfolio(2) 바른 식탁 */
+    .portfolio2 {
+        width: 100%;
+        height: 900px;
+        transition-duration: 0.5s;
+    }   
+    /* 포트폴리오2 웹 사이트 이름 */
+    .portfolio2 .p_title {
+        width: 210px;
+        height: 75px;
+        /*background-color: antiquewhite;*/
+        left: 50%;
+        top: 45%;
+    }
+    .portfolio2 .p_title>p {
+        font-size: 45px;
+    }
+    /* 포트폴리오2 웹 사이트 설명 */
+    .portfolio2 table {
+        width: 200px;
+        height: 70px;
+        /*background-color: lightgoldenrodyellow;*/
+        font-size: 11px;
+    }
+    .portfolio2 th:nth-child(1) {
+        width: 50px;
+    }
+    .portfolio2 td:nth-child(1) {
+        width: 50px;
+    }
+    /* 포트폴리오2 웹 사이트 바로가기 버튼 */
+    .portfolio2 .toolbar {
+        width: 180px;
+        height: 80px;
+        /*background-color: lightblue;*/
+        right: 3%;
+        bottom: 2%;
+    }
+    .portfolio2 .toolbar button {
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+
 }
