@@ -416,7 +416,7 @@ footer .f_list li {
 }
 
 /*반응형 미디어 쿼리 지정*/
-/*1599px 미만일 때*/
+/*1600px 미만일 때*/
 @media screen and (max-width:1599px){
     /*header*/
     header {
@@ -456,7 +456,7 @@ footer .f_list li {
         margin-left: 170px;
     }
 }
-/*1199px 미만일 때*/
+/*1200px 미만일 때*/
 @media screen and (max-width:1199px){
     /*header*/
     header {

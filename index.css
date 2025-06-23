@@ -298,6 +298,92 @@ a {
     color: #686666;
     font-family: "Gothic A1", serif;
 }
+/* portfolio(3) 피클 UI/UX 기획 */
+.portfolio3 {
+    width: 100%;
+    height: 1080px;
+    background-color: #417d57;
+    position: relative;
+}
+/* portfolio(3) 피클 UI/UX 기획 로고*/
+.portfolio3_logo {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: 22%;
+    top: 27%;
+    /*border: 1px solid red;*/
+} 
+.portfolio3_logo img {
+    width: 100%;
+    height: 100%;
+}
+/* 포트폴리오3 이름 */
+.portfolio3 .p_title {
+    width: 500px;
+    height: 250px;
+    /*background-color: antiquewhite;*/
+    position: absolute;
+    left: 32%;
+    bottom: 26%;
+    transform: translate(-50%, -50%);
+}
+.portfolio3 .p_title>p {
+    font-size: 80px;
+    font-weight: bold;
+    color: #dbd8d5;
+    text-align: center;
+}
+/* portfolio(3) 피클 UI/UX 기획 설명 */
+.portfolio3 table {
+    width: 500px;
+    height: 80px;
+    /*background-color: lightgoldenrodyellow;*/
+    border-collapse: collapse;
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+    color: #fffdfa;
+}
+.portfolio3 th {
+    border-bottom: 1px solid #ddd6cb;
+}
+.portfolio3 th:nth-child(1) {
+    width: 180px;
+}
+.portfolio3 td:nth-child(1) {
+    width: 180px;
+    text-align: center;
+}
+.portfolio3 td:nth-child(2) {
+    text-align: center;
+}
+/* 포트폴리오3  바로가기 버튼 */
+.portfolio3 .toolbar {
+    width: 160px;
+    height: 120px;
+    /*background-color: lightblue;*/
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    overflow: hidden;
+}
+.portfolio3 .toolbar button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 100%;
+}
+.portfolio3 .toolbar button:nth-child(1) {
+    margin-left: 30px;
+    margin-right: 20px;
+    background-color: #cac4c4;
+    color: #706c6c;
+    font-family: "Gothic A1", serif;
+}
 /*반응형 미디어 쿼리 지정*/
 /*1600px 미만일 때*/
 @media screen and (max-width:1599px){
@@ -329,6 +415,21 @@ a {
         border: none;
         font-size: 15px;
     }
+    /*portfolio(1) conte jeju*/
+    .portfolio1 {
+        width: 100%;
+        transition-duration: 0.7s;
+    }
+    /*portfolio(2) 바른 식탁 */
+    .portfolio2 {
+        width: 100%;
+        transition-duration: 0.5s;
+    }  
+    /*portfolio(3) 피클 */
+    .portfolio3 {
+        width: 100%;
+        transition-duration: 0.5s;
+    }   
 }
 /*1200px 미만일 때*/
 @media screen and (max-width:1199px){
@@ -348,7 +449,7 @@ a {
         width: 650px;
         height: 500px;
         top: 26%;
-        right: 8%;
+        right: 10%;
         font-size: 14px;
     }
     /*메뉴 창*/
@@ -365,6 +466,34 @@ a {
     font-size: 40px;
     margin-left: 300px;
     }
+    /*portfolio(1) conte jeju*/
+    .portfolio1 {
+        width: 100%;
+        transition-duration: 0.7s;
+    }
+    /*portfolio(2) 바른 식탁 */
+    .portfolio2 {
+        width: 100%;
+        transition-duration: 0.5s;
+    }  
+    /*portfolio(3) 피클 */
+    .portfolio3 {
+        width: 100%;
+        transition-duration: 0.5s;
+    }
+    /* portfolio(3) 피클 UI/UX 기획 로고*/
+    .portfolio3_logo {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        right: 12%;
+        top: 27%;
+        /*border: 1px solid red;*/
+    } 
+    .portfolio3_logo img {
+        width: 100%;
+        height: 100%;
+    }
 }
 /*900px 미만일 때*/
 @media screen and (max-width:899px){
@@ -376,15 +505,15 @@ a {
     .introduction>p {
         font-size: 28px;
         width: 20%;
-        top: 68%;
-        left: 7%;
+        top: 50%;
+        left: 8%;
         /*border: 1px solid #fff;*/
     }
     .introduction table {
         width: 480px;
         height: 450px;
-        top: 40%;
-        right: 8%;
+        top: 25%;
+        right: 10%;
         font-size: 13px;
     }
     .introduction table th {
@@ -512,6 +641,67 @@ a {
         margin-top: 10px;
         font-size: 14px;
     }
+    /*portfolio(3) 피클 */
+    .portfolio3 {
+        width: 100%;
+        transition-duration: 0.5s;
+    }
+    /* portfolio(3) 피클 UI/UX 기획 로고*/
+    .portfolio3_logo {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 12%;
+        top: 33%;
+        /*border: 1px solid red;*/
+    } 
+    .portfolio3_logo img {
+        width: 100%;
+        height: 100%;
+    }
+    /* 포트폴리오3 이름 */
+    .portfolio3 .p_title {
+        width: 370px;
+        height: 200px;
+        /*background-color: antiquewhite;*/
+        position: absolute;
+        left: 32%;
+        bottom: 32%;
+        transform: translate(-50%, -50%);
+    }
+    .portfolio3 .p_title>p {
+        font-size: 60px;
+        font-weight: bold;
+        color: #dbd8d5;
+        text-align: center;
+    }
+    /* 포트폴리오3 웹 사이트 설명 */
+    .portfolio3 table {
+        width: 320px;
+        height: 80px;
+        /*background-color: lightgoldenrodyellow;*/
+        font-size: 14px;
+    }
+    .portfolio3 th:nth-child(1) {
+        width: 100px;
+    }
+    .portfolio3 td:nth-child(1) {
+        width: 100px;
+    }
+    /* 포트폴리오3 바로가기 버튼 */
+    .portfolio3 .toolbar {
+        width: 140px;
+        height: 100px;
+        /*background-color: lightblue;*/
+        right: 3%;
+        bottom: 2%;
+    }
+    .portfolio3 .toolbar button {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
 }
 /*680px 미만일 때*/
 @media screen and (max-width:679px){
@@ -524,15 +714,15 @@ a {
     .introduction>p {
         font-size: 24px;
         width: 25%;
-        top: 68%;
-        left: 4%;
+        top: 47%;
+        left: 5%;
         /*border: 1px solid #fff;*/
     }
     .introduction table {
         width: 380px;
         height: 400px;
-        top: 40%;
-        right: 6%;
+        top: 29%;
+        right: 7%;
         font-size: 11px;
     }
     .introduction table th {
@@ -665,26 +855,82 @@ a {
         margin-top: 10px;
         font-size: 13px;
     }
+    /*portfolio(3) 피클 */
+    .portfolio3 {
+        width: 100%;
+        height: 900px;
+        transition-duration: 0.5s;
+    }
+    /* portfolio(3) 피클 UI/UX 기획 로고*/
+    .portfolio3_logo {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 12%;
+        top: 34%;
+        /*border: 1px solid red;*/
+    } 
+    .portfolio3_logo img {
+        width: 100%;
+        height: 100%;
+    }
+    /* 포트폴리오3 이름 */
+    .portfolio3 .p_title {
+        width: 320px;
+        height: 160px;
+        /*background-color: antiquewhite;*/
+        position: absolute;
+        left: 32%;
+        bottom: 36%;
+        transform: translate(-50%, -50%);
+    }
+    .portfolio3 .p_title>p {
+        font-size: 50px;
+    }
+    /* 포트폴리오3 웹 사이트 설명 */
+    .portfolio3 table {
+        width: 210px;
+        height: 80px;
+        /*background-color: lightgoldenrodyellow;*/
+        font-size: 13px;
+    }
+    .portfolio3 th:nth-child(1) {
+        width: 80px;
+    }
+    /* 포트폴리오3 바로가기 버튼 */
+    .portfolio3 .toolbar {
+        width: 130px;
+        height: 100px;
+        /*background-color: lightblue;*/
+        right: 3%;
+        bottom: 2%;
+    }
+    .portfolio3 .toolbar button {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        font-size: 13px;
+    }
 }
 /*540px 미만일 때*/
 @media screen and (max-width:539px){
     /*메인 소개페이지*/
     .introduction{
         width: 100%;
-        height: 900px;
+        height: 800px;
         transition-duration:0.7s;
     }
     .introduction>p {
         font-size: 20px;
         width: 25%;
-        top: 68%;
+        top: 41%;
         left: 3%;
         /*border: 1px solid #fff;*/
     }
     .introduction table {
         width: 330px;
         height: 350px;
-        top: 40%;
+        top: 25%;
         right: 5%;
         font-size: 10px;
     }
@@ -697,7 +943,7 @@ a {
     /*메뉴 창*/
     #wrap {
         width: 100%;
-        height: 900px;
+        height: 800px;
         transition-duration:0.7s;
     }
     .menu_bg {
@@ -818,5 +1064,60 @@ a {
         margin-top: 10px;
         font-size: 11px;
     }
-
+    /*portfolio(3) 피클 */
+    .portfolio3 {
+        width: 100%;
+        height: 900px;
+        transition-duration: 0.5s;
+    }
+    /* portfolio(3) 피클 UI/UX 기획 로고*/
+    .portfolio3_logo {
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        right: 12%;
+        top: 34%;
+        /*border: 1px solid red;*/
+    } 
+    .portfolio3_logo img {
+        width: 100%;
+        height: 100%;
+    }
+    /* 포트폴리오3 이름 */
+    .portfolio3 .p_title {
+        width: 220px;
+        height: 130px;
+        /*background-color: antiquewhite;*/
+        position: absolute;
+        left: 32%;
+        bottom: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .portfolio3 .p_title>p {
+        font-size: 40px;
+    }
+    /* 포트폴리오3 웹 사이트 설명 */
+    .portfolio3 table {
+        width: 200px;
+        height: 70px;
+        /*background-color: lightgoldenrodyellow;*/
+        font-size: 11px;
+    }
+    .portfolio3 th:nth-child(1) {
+        width: 40px;
+    }
+    /* 포트폴리오3 바로가기 버튼 */
+    .portfolio3 .toolbar {
+        width: 100px;
+        height: 80px;
+        /*background-color: lightblue;*/
+        right: 3%;
+        bottom: 2%;
+    }
+    .portfolio3 .toolbar button {
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
 }

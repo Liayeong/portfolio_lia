@@ -141,34 +141,29 @@ header .bottom {
     background-color: #3e583f;
 }
 .b_menu {
-    width: 580px;
-    height: 23px;
+    width: 570px;
+    height: 50px;
     /*background-color: aqua;*/
-    position: absolute;
-    bottom: 5%;
-    left: 35%;
+    margin: 0 auto;
 }
 .b_menu>li {
     font-family: "Roboto Mono", serif;
     display: block;
     float: left;
     width: 100px;
-    height: 20px;
+    height: 50px;
     /*border: 1px solid red;*/
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    line-height: 20px;
+    line-height: 50px;
     margin-left: 20px;
     color: #b3b39b;
 }
 .b_menu .easy {
-    width: 165px;
-    height: 20px;
-}
-/* b_menu>li   호버*/
-.b_menu>li:hover {
-    color: #EBF0DE;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
 }
 /*quick bar*/
 .quickbar {
@@ -214,7 +209,7 @@ header .bottom {
 }
 .sign form {
     width: 800px;
-    height: 850px;
+    height: 970px;
     /*border: 1px solid;
     box-sizing: border-box;*/
     margin: 0 auto;
@@ -240,7 +235,7 @@ form .tit>p>span {
     color: #F02727 ;
 }
 form .tit>hr {
-    width: 670px;
+    width: 100%;
     border: 1.5px solid #404040;
     margin: 0 auto;
     margin-top: 25px;
@@ -317,7 +312,7 @@ form .terms sup {
     color: #F02727 ;
 }
 form .terms>hr {
-    width: 670px;
+    width: 100%;
     border: 1px solid #404040;
     margin: 0 auto;
 }
@@ -332,8 +327,7 @@ form .terms .agree {
 form .terms_list {
     width: calc(100%-200px);
     height: 230px;
-    box-sizing: border-box;
-    /*background-color: lightgoldenrodyellow;*/
+    box-sizing: border-box;    /*background-color: lightgoldenrodyellow;*/
     /*border: 1px solid;*/
 }
 form .terms .terms_list h4 {
@@ -438,4 +432,750 @@ footer>p {
     position: absolute;
     right: 28%;
     bottom: 28%;
+}
+/*반응형 미디어 쿼리 지정*/
+/*1600px 미만일 때*/
+@media screen and (max-width:1599px){
+    /*header*/
+    header {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    /*메인메뉴*/
+    .b_menu {
+        width: 505px;
+        /*background-color: aqua;*/
+        margin: 0 auto;
+    }
+    .b_menu>li {
+        width: 90px;
+        /*border: 1px solid red;*/
+    }
+    .b_menu .easy {
+        width: 130px;
+    }
+    /*sign up*/
+    .sign {
+        width: 100%;
+        transition-duration:0.7s;
+        /*background-color: lightgoldenrodyellow;*/
+    }
+    /*footer*/ 
+    footer {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .terms ul {
+        width: 970px;
+        /*border: 1px solid blueviolet;*/
+    }
+    .terms ul li {
+        width: 200px;
+        /*border: 1px solid blueviolet;*/
+        margin: 5px 60px;
+    }
+    footer .f_logo {
+        left: 26%;
+    }
+    footer>p {
+        right: 25%;
+    }
+}
+/*1200px 미만일 때*/
+@media screen and (max-width:1199px){
+     /*header*/
+     header {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    /*메인메뉴*/
+    .b_menu {
+        width: 505px;
+        /*background-color: aqua;*/
+    }
+    .b_menu>li {
+        width: 90px;
+        /*border: 1px solid red;*/
+    }
+    .b_menu .easy {
+        width: 130px;
+        height: 20px;
+    }
+    /*quick bar*/
+    .quickbar {
+        width: 60px;
+        height: 210px;
+    }
+    .q_icon {
+        width: 30px;
+        height: 30px;
+    }
+    .quickbar .up {
+        width: 30px;
+        height: 30px;
+    }
+    /*sign up*/
+    .sign {
+        width: 100%;
+        transition-duration:0.7s;
+        /*background-color: lightgoldenrodyellow;*/
+    }
+    /*footer*/ 
+    footer {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .terms ul {
+        width: 970px;
+        /*border: 1px solid blueviolet;*/
+    }
+    .terms ul li {
+        width: 200px;
+        /*border: 1px solid blueviolet;*/
+        margin: 5px 60px;
+    }
+    footer .f_logo {
+        left: 18%;
+    }
+    footer>p {
+        right: 19%;
+    }
+}
+/*900px 미만일 때*/
+@media screen and (max-width:899px){
+    /*header*/
+    header {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    /*로그인, 회원가입, 고객센터*/
+    header .top {
+        width: 100%;
+    }
+    .t_menu { 
+        right: 6%;
+    }
+    /*로고, 검색창, 마이페이지, 장바구니*/
+    header .mid {
+        width: 100%;
+    }
+    .mid .logo {
+        width: 200px;
+        height: 80px;
+        /*background-color: aquamarine;*/
+        position: absolute;
+        top: 34%;
+        left: 6%;
+    }
+    .mid_icon {
+        width: 450px;
+        /*background-color: lightpink;*/
+        right: 5%;
+    }
+    .mid .search {
+        width: 280px;
+        /*border: 1px solid rebeccapurple;
+        box-sizing: border-box;*/
+    }
+    .mid .search input[type=text] {
+        width: 260px;
+    }
+    /*메인메뉴*/
+    .b_menu {
+        width: 560px;
+        height: 23px;
+        /*background-color: aqua;*/
+        left: 20%;
+    }
+    .b_menu>li {
+        width: 100px;
+        /*border: 1px solid red;*/
+        margin-left: 20px;
+    }
+    .b_menu .easy {
+        width: 150px;
+    }
+    /*quick bar*/
+     .quickbar {
+        width: 55px;
+        height: 190px;
+    }
+    .q_icon {
+        width: 25px;
+        height: 25px;
+    }
+    .quickbar .up {
+        width: 30px;
+        height: 30px;
+    }
+    /*sign up*/
+    .sign {
+        width: 100%;
+        transition-duration:0.7s;
+        /*background-color: lightgoldenrodyellow;*/
+    }
+    /*footer*/ 
+    footer {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    .terms ul {
+        width: 575px;
+        /*border: 1px solid blueviolet;*/
+    }
+    .terms ul li {
+        width: 160px;
+        font-size: 14px;
+        /*border: 1px solid blueviolet;*/
+        margin: 5px 25px;
+    }
+    .terms ul li:first-child {
+        width: 100px;
+    }
+    footer .f_logo {
+        left: 13%;
+    }
+    footer>p {
+        right: 12%;
+        font-size: 12px;
+    }
+}
+/*680px 미만일 때*/
+@media screen and (max-width:679px){
+    /*header*/
+    header {
+        width: 100%;
+        transition-duration:0.7s;
+    }
+    /*로그인, 회원가입, 고객센터*/
+    header .top {
+        width: 100%;
+    }
+    .t_menu { 
+        right: 6%;
+    }
+    /*로고, 검색창, 마이페이지, 장바구니*/
+    header .mid {
+        width: 100%;
+    }
+    .mid .logo {
+        width: 150px;
+        height: 60px;
+        /*background-color: aquamarine;*/
+        position: absolute;
+        top: 38%;
+        left: 4%;
+    }
+    .mid_icon {
+        width: 350px;
+        /*background-color: lightpink;*/
+        right: 6%;
+    }
+    .mid .search {
+        width: 200px;
+        /*border: 1px solid rebeccapurple;
+        box-sizing: border-box;*/
+    }
+    .mid .search input[type=text] {
+        width: 180px;
+    }
+    /*메인메뉴*/
+    .b_menu {
+        width: 520px;
+        /*background-color: aqua;*/
+        left: 11%;
+    }
+    .b_menu>li {
+        /*border: 1px solid red;*/
+        font-size: 18px;
+    }
+    .b_menu .easy {
+        width: 120px;
+     }
+    /*quick bar*/
+    .quickbar {
+        width: 40px;
+        height: 160px;
+        margin-right: 5px;
+    }
+    .q_icon {
+        width: 20px;
+        height: 20px;
+        /*border: 1px solid lightcoral;*/
+        margin: auto 10px;
+        margin-top: 10px;
+    }
+    .quickbar .up {
+        width: 20px;
+        height: 20px;
+        margin: auto 10px;
+        margin-top: 10px;
+    }
+    /*sign up*/
+    .sign {
+        width: 100%;
+        transition-duration:0.7s;
+        height: 1300px;
+        /*background-color: lightgoldenrodyellow;*/
+    }
+    .sign form {
+        width: 80%;
+        height: 930px;
+        /*border: 1px solid;
+        box-sizing: border-box;*/
+    }
+    /*회원가입 제목*/
+    form .tit {
+        width: 100%;
+        height: 100px;
+        /*background-color: lightpink;
+        border: 1px solid rebeccapurple;*/
+    }
+    form .tit>h2 {
+        font-size: 20px;
+    }
+    form .tit>p {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    form .tit>hr {
+        width: 100%;
+    }
+    /*회원가입 입력사항*/
+    form .check {
+        width: 100%;
+        height: 450px;
+        /*background-color: lightsalmon;*/
+    }
+    form .check .checklist {
+        width: 85%;
+        height: 450px;
+        /*border: 1px solid;*/
+        margin: 0 auto;
+    }
+    .checklist label {
+        width: 100px;
+        height: 20px;
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 20px;
+        /*background-color: lightblue;*/
+        font-size: 14px;
+    }
+    .checklist input[type=text] {
+        width: 66%;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    .checklist input[type=password] {
+        width: 66%;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    .checklist input[type=email] {
+        width: 66%;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    .checklist input[type=radio] {
+        width: 15px;
+        height: 15px;
+    }
+    /*회원가입 약관동의*/
+    form .terms {
+        width: 85%;
+        height: 230px;
+        /*background-color: lightskyblue;
+         border: 1px solid;*/
+        margin-top: 20px;
+    }
+    form .terms>hr {
+        width: 100%;
+    }
+    form .terms .agree {
+        width: 30%;
+        height: 230px;
+        line-height: 200px;
+        /*background-color: lightcoral;*/
+    }
+    form .terms .agree>p {
+        font-size: 14px;
+    }
+    form .terms_list {
+        height: 230px;
+        /*background-color: lightgoldenrodyellow;
+        border: 1px solid rebeccapurple;
+        box-sizing: border-box;*/
+    }
+    form .terms .terms_list h4 {
+        font-size: 12px;
+    }
+    form .terms .terms_list h4>span {
+        font-size: 10px;
+    }
+    form .terms .terms_list>p {
+        font-size: 10px;
+    }
+    .terms_list .terms_more1 {
+        font-size: 8px;
+        width: 310px;
+        height: 10px;
+        line-height: 10px;
+        /*background-color: lightblue;*/
+    }
+    .terms_list .terms_more2 {
+        font-size: 8px;
+        width: 310px;
+        height: 10px;
+        line-height: 10px;
+       /* background-color: lightblue;
+        border: 1px solid;*/
+    }
+    .terms_list input[type=radio] {
+        width: 15px;
+        height: 15px;
+        margin: 10px 0;
+    }
+    /*가입하기 버튼*/
+    form input[type=submit] {
+        margin: 30px auto;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 13px;
+    }
+    /*footer*/ 
+    footer {
+        width: 100%;
+        height: 200px;
+        transition-duration:0.7s;
+    }
+    .terms {
+        width: 100%;
+        height: 50px;
+    }
+    .terms ul {
+        width: 445px;
+       /*border: 1px solid blueviolet;*/
+    }
+    .terms ul li {
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        /*border: 1px solid blueviolet;*/
+        margin: 5px 15px;
+    }
+    .terms ul li:first-child {
+        width: 90px;
+    }
+    footer .f_logo {
+        width: 160px;
+        height: 60px;
+        left: 8%;
+        bottom: 22%;
+    }
+    footer>p {
+        right: 11%;
+        bottom: 25%;
+        font-size: 10px;
+    }
+}
+/*540px 미만일 때*/
+@media screen and (max-width:539px){
+     /*header*/
+     header {
+        width: 100%;
+        height: 200px;
+        transition-duration:0.7s;
+    }
+    /*로그인, 회원가입, 고객센터*/
+    header .top {
+        width: 100%;
+    }
+    .t_menu {
+        width: 220px;
+        height: 20px;
+        /*background-color: aqua;*/
+        font-size: 12px;
+        top: 7%;
+        right: 9%;
+    }
+    .t_menu li {
+        width: 50px;
+        height: 20px;
+        /*border: 1px solid red;*/
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 20px;
+    }
+    .t_menu { 
+        right: 6%;
+    }
+    /*로고, 검색창, 마이페이지, 장바구니*/
+    header .mid {
+        width: 100%;
+        height: 100px;
+    }
+    .mid .logo {
+        width: 120px;
+        height: 50px;
+        /*background-color: aquamarine;*/
+        top: 37.55%;
+        left: 4%;
+    }
+    .mid_icon {
+        width: 300px;
+        /*background-color: lightpink;*/
+        right: 4%;
+        top: 40%;
+    }
+    .mid .search {
+        width: 170px;
+       /*border: 1px solid rebeccapurple;
+        box-sizing: border-box;*/
+        margin-right: 15px;
+    }
+    .s_iconbox {
+        width: 30px;
+        height: 30px;
+        /*border: 1px solid salmon;
+        box-sizing: border-box;*/
+        right: 10%;
+        top: 9%;
+    }
+    .mid .search input[type=text] {
+        width: 140px;
+        height: 30px;
+        margin-right: 15px;
+    }
+    .mid .personal {
+        width: 40px;
+        height: 40px;
+       /*border: 1px solid;
+        box-sizing: border-box;*/
+        margin-right: 15px;
+    }
+    .mid .s_bag{
+        width: 40px;
+        height: 40px;
+        /*box-sizing: border-box;
+        border: 1px solid;*/
+    }
+    /*메인메뉴*/
+    .b_menu {
+        width: 400px;
+        /*background-color: aqua;*/
+        left: 13%;
+        bottom: 6%;
+    }
+    .b_menu>li {
+        width: 80px;
+        /*border: 1px solid red;*/
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .b_menu .easy {
+        width: 100px;
+    } 
+    /*quick bar*/
+    .quickbar {
+        width: 35px;
+        height: 140px;
+        margin-right: 5px;
+    }
+    .q_icon {
+        width: 15px;
+        height: 15px;
+        /*border: 1px solid lightcoral;*/
+        margin: auto 10px;
+        margin-top: 10px;
+    }
+    .quickbar .up {
+        width: 15px;
+        height: 15px;
+        margin: auto 10px;
+        margin-top: 10px;
+    }
+    /*sign up*/
+    .sign {
+        width: 100%;
+        transition-duration:0.7s;
+        /*background-color: lightgoldenrodyellow;*/
+    }
+    /*sign up*/
+    .sign {
+        width: 100%;
+        transition-duration:0.7s;
+        height: 1300px;
+        /*background-color: lightgoldenrodyellow;*/
+    }
+    .sign form {
+        width: 80%;    
+    }
+    /*회원가입 제목*/
+    form .tit {
+        width: 100%;
+        height: 100px;
+        /*background-color: lightpink;
+        border: 1px solid rebeccapurple;*/
+    }
+    form .tit>h2 {
+        font-size: 20px;
+    }
+    form .tit>p {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    form .tit>hr {
+        width: 100%;
+    }
+    /*회원가입 입력사항*/
+    form .check {
+        width: 100%;
+        height: 430px;
+        /*background-color: lightsalmon;*/
+    }
+    form .check .checklist {
+        width: 85%;
+        height: 450px;
+        /*border: 1px solid;*/
+        margin: 0 auto;
+    }
+    .checklist label {
+        width: 75px;
+        height: 20px;
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 20px;
+        /*background-color: lightblue;*/
+        font-size: 12px;
+    }
+    .checklist input[type=text] {
+        width: 62%;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    .checklist input[type=text]::placeholder {
+        text-align: center;
+        line-height: 30px;
+    }
+    .checklist input[type=password] {
+        width: 62%;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    .checklist input[type=email] {
+        width: 62%;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    .checklist input[type=radio] {
+        width: 10px;
+        height: 10px;
+    }
+    /*회원가입 약관동의*/
+    form .terms {
+        width: 85%;
+        height: 230px;
+        /*background-color: lightskyblue;*/
+        margin-top: 10px;
+        /*border: 1px solid;*/
+    }
+    form .terms>hr {
+        width: 100%;
+    }
+    form .terms .agree {
+        width: 25%;
+        height: 230px;
+        line-height: 200px;
+        /*background-color: lightcoral;*/
+    }
+    form .terms .agree>p {
+        font-size: 10px;
+    }
+    form .terms_list {
+        width: calc(100%-200px);
+        height: 230px;
+        /*border: 1px solid rebeccapurple;
+        box-sizing: border-box;
+        background-color: lightgoldenrodyellow;*/
+    }
+    form .terms .terms_list h4 {
+        display: inline-block;
+        font-size: 11px;
+    }
+    form .terms .terms_list h4>span {
+        font-size: 8px;
+    }
+    form .terms .terms_list>p {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .terms_list .terms_more1 {
+        display: inline-block;
+        font-size: 8px;
+        width: 260px;
+        height: 10px;
+        line-height: 10px;
+        /*background-color: lightblue;*/
+    }
+    .terms_list .terms_more2 {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 8px;
+        width: 260px;
+        height: 10px;
+        line-height: 10px;
+        /*background-color: lightblue;*/
+    }
+    .terms_list input[type=radio] {
+        width: 10px;
+        height: 10px;
+        margin: 10px 0;
+    }
+    /*가입하기 버튼*/
+    form input[type=submit] {
+        margin: 30px auto;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+    }
+    /*footer*/ 
+    footer {
+        width: 100%;
+        height: 200px;
+        transition-duration:0.7s;
+    }
+    .terms {
+        width: 100%;
+        height: 50px;
+    }
+    .terms ul {
+        width: 385px;
+        /*border: 1px solid blueviolet;*/
+    }
+    .terms ul li {
+        width: 110px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 10px;
+        /*border: 1px solid blueviolet;*/
+        margin: 5px 15px;
+    }
+    .terms ul li:first-child {
+        width: 70px;
+    }
+    footer .f_logo {
+        width: 120px;
+        height: 40px;
+        left: 10%;
+        bottom: 28%;
+    }
+    footer>p {
+        right: 11%;
+        bottom: 29%;
+        font-size: 8px;
+    }
 }
